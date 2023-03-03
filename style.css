@@ -12,14 +12,13 @@ body {
   align-items: center;
   min-height: 100vh;
   scroll-behavior: smooth;
-
 }
 
 .container {
   position: relative;
-  width: 4000px;
+  width: 6000px;
   max-width: 100%;
-  /*height:calc(100vh - 40px);*/
+  height: calc(100vh - 40px);
   background: #1c1c1c;
   display: flex;
 }
@@ -120,7 +119,7 @@ body {
   align-items: center;
   padding: 15px;
   cursor: pointer;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2) ;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .chatList .block:hover {
@@ -200,7 +199,6 @@ body {
   height: calc(100% - 120px);
   padding: 50px;
   overflow-y: auto;
-
 }
 
 .message {
@@ -228,11 +226,13 @@ body {
   right: -12px;
   width: 20px;
   height: 20px;
-  background: linear-gradient(135deg,
-      #111d2c 0%,
-      #111d2c 50%,
-      transparent 50%,
-      transparent);
+  background: linear-gradient(
+    135deg,
+    #111d2c 0%,
+    #111d2c 50%,
+    transparent 50%,
+    transparent
+  );
 }
 
 .message p span {
@@ -262,11 +262,13 @@ body {
   left: -12px;
   width: 20px;
   height: 20px;
-  background: linear-gradient(225deg,
-      #0d497e 0%,
-      #0d497e 50%,
-      transparent 50%,
-      transparent);
+  background: linear-gradient(
+    225deg,
+    #0d497e 0%,
+    #0d497e 50%,
+    transparent 50%,
+    transparent
+  );
 }
 
 .chatbox-input {
@@ -334,14 +336,30 @@ body {
   background: #1d3d57;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 2000px) {
   .container {
     position: relative;
-    width: 4000px;
+    width: 1800px;
+    max-width: 100%;
+    /* height: calc(100vh - 40px); */
+    display: flex;
+    border-radius: 0.5rem;
+    border: 5px solid #1c1c1c;
+  }
+  body {
+    background: url(Sin\ título-1.png) #3D3D3D;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 1500px) {
+  .container {
+    position: relative;
+    width: 100%;
     max-width: 100%;
     height: calc(100vh);
-    background: #1c1c1c;
     display: flex;
+    border-radius: 0rem;
   }
-  
 }
